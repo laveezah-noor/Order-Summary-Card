@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap');
+
+.container {
+    padding: 0 2rem;
+    background-image: url("/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+  }
+  .bg_vpale_blue{
+    background-color: hsl(225, 100%, 98%);
+  }
+  .fg_vpale_blue{
+    color: hsl(225, 100%, 98%) !important;
+  }
+  .fg_desaturated_blue{
+    color: hsl(224, 23%, 55%);
+  }
+  .fg_dark_blue{
+    color: hsl(223, 47%, 23%);
+  }
+  .main {
+    /* Sizes */
+    /* Mobile */
+    min-width: 375px;
+     /* Desktop */
+    max-width: 1440px;
+    padding: 4rem 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    background-color: white;
+    margin: 1rem;
+    text-align: center;
+    color: inherit;
+    text-decoration: none;
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+    max-width: 350px;
+  }
+    
+  .card_img{
+    margin: 0;
+    padding: 0;
+    border: inherit;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .card h2 {
+    margin: 0 0 1rem 0;
+    font-size: 1.5rem;
+    font-weight: 900;
+    font-family: 'Red Hat Display', sans-serif;
+    text-align: center;
+  }
+  
+  .card p {
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+    font-family: 'Red Hat Display', sans-serif;
+  }
+  .card_body{
+    padding: 1rem;
+  }
+  
+  .card_footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px auto;
+    padding: 5px;
+    justify-content: center;
+  }
+
+  .card_button{
+    border: 1px;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 8px auto;
+    cursor: pointer;
+    background-color: inherit;
+  }
+
+  .box_shadow{
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .card_button span{
+    font-weight: 700;
+    font-family: 'Red Hat Display', sans-serif;
+    color: hsl(224, 23%, 55%);
+    padding: 8px 80px;
+    border: 1px;
+    border-radius: 5px;
+    transition: color 0.15s ease, font-weight 0.15s ease;
+  }
+  .card_button span:hover,
+  .card_button span:focus,
+  .card_button span:active {
+    color: #070708;
+    font-weight: 800;
+  }
+  .bg_bright_blue{
+    background-color: hsl(245, 75%, 52%);
+    transition: background-color 0.15s ease;
+  }
+  .bg_bright_blue:active,
+  .bg_bright_blue:hover,
+  .bg_bright_blue:focus{
+    background-color: #766CF1;
+  }
+  .mini_card{
+    display: flex;
+    margin: 10px;
+    padding: 15px;
+
+  }
+  .mini_card_body{
+    display: flex;
+    flex-direction: column;
+    margin: 0 15px;
+  }
+  .mini_card_body .title{
+    font-weight: 700;
+  }
+  .mini_card_body .text{
+    font-weight: 500;
+  }
+  .link_title{
+    margin: 5px auto;
+    cursor: pointer;
+    font-weight: 700;
+    text-decoration: underline;
+    font-size: 14px;
+    color: hsl(245, 75%, 52%);
+    transition: color 0.15s ease, text-decoration 0.15s ease
+  }
+  .link_title:focus,
+  .link_title:hover,
+  .link_title:active{
+    text-decoration: none;
+    color:#766CF1
+  }
