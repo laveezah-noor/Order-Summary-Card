@@ -1,9 +1,11 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import styles from '../styles/Main.module.css'
 import Card from '../components/Card'
 
 export default function Home() {
   return (
+    <>
     <div className={`${styles.container} ${styles.bg_vpale_blue}`}>
       <Head>
         <title>Order Summary Card</title>
@@ -13,10 +15,11 @@ export default function Home() {
       <main className={styles.main}>
       <Card/>
       </main>
-      <footer>
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Laveezah Noor</a>.
-      </footer>
     </div>
+    <footer className={styles.footer}>
+      Challenge by <Link href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</Link>. 
+      Coded by <a className={styles.name} href="https://www.linkedin.com/in/laveezah-noor/">Laveezah Noor</a>.
+      </footer>
+    </>
     )
 }

@@ -18,7 +18,7 @@ export default function Card() {
             <span className={`${styles.title} ${styles.fg_dark_blue}`}>Annual Plan</span>
             <span className={`${styles.text} ${styles.fg_desaturated_blue}`}>$59.99/year</span>
           </div>
-          <Link href=""><span className={styles.link_title}>Change</span></Link>
+          <Link href="#"><span className={styles.link_title}>Change</span></Link>
         </div>
       </div> 
       {/* Card Buttons */}
